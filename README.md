@@ -17,7 +17,7 @@
 
 * 下载最新的 SciTE，或者一个可供替代的非官方构建版
 
-* 示例: 一个可以让你替代构建版的 SciTE that lets you write plugins in Python 
+* 示例: 一个可以让你使用 Python 编写插件的替代构建版的 SciTE
 
 ### [添加功能到 SciTE](./files/helpers.md)
 
