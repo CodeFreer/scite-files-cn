@@ -1,102 +1,102 @@
-[Back](../README.md)
+[返回](../README.md)
 
-### Information
+### 信息
 
-* An [introduction to adding features to SciTE with Lua scripts](./files/helpers/adding_scite_features_with_lua.md), read this to learn how to install a .lua script in the list below
+* 一个[介绍使用 Lua 脚本添加功能到 SciTE](./files/helpers/adding_scite_features_with_lua.md), 阅读这个链接如何安装下面列表中的 .lua 脚本
 
-### Scripts for SciTE
+### SciTE 的脚本
 
-* [swapheader](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/swapheader.lua) move from a .c to a .h. Read the "Installing someone else's Lua script" section in [this guide](./files/helpers/adding_scite_features_with_lua.md) for installation instructions.
+* [swapheader](./files/helpers/swapheader.lua) 从一个 .c 移到一个 .h。阅读[这个指南](./files/helpers/adding_scite_features_with_lua.md)中的"安装其他人的 Lua 脚本"一节了解安装说明。
 
-* [autoblock.zip](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/autoblock.zip) lua scripts for block completion, by Mario Ray M.
+* [autoblock.zip](./files/helpers/autoblock.zip) 由 Mario Ray M 提供的用于块补全的 lua 脚本。
 
-* [See ascii codes in selection](./files/helpers/see_ascii_selection.md)
+* [查看选择内容的 ascii 代码](./files/helpers/see_ascii_selection.md)
 
-* [smartpaste](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/smartpaste.lua), lua script to correctly indent pasted code
+* [smartpaste](./files/helpers/smartpaste.lua)，用于正确缩排粘贴的代码的 lua 脚本
 
-* [scitecmd](http://www.frykholm.se/scitecmd.html) open files in SciTE from the Windows command line
+* [scitecmd](http://www.frykholm.se/scitecmd.html) 从 Windows 命令行在 SciTE 中打开文件
 
-* [SciTE Windows Context menu](https://github.com/andreburgaud/wscitecm), by andre burgaud
+* [SciTE Windows 上下文菜单](https://github.com/andreburgaud/wscitecm) 由 andre burgaud 提供
 
-* [Orthospell](http://tools.diorama.ch/orthospell.html), spellcheck for SciTE, based on [luahunspell](https://code.google.com/p/luahunspell/)
+* [Orthospell](http://tools.diorama.ch/orthospell.html), SciTE 的拼写检查，基于 [luahunspell](https://code.google.com/p/luahunspell/)
 
-* [extman](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/extman.zip) 
+* [extman](./files/helpers/extman.zip) 
 
-    * dispatches scite events so that many lua scripts can be installed at the same time without conflict. You might have several different scripts that each need to respond to the OnOpen event, and extman lets each script coexist.
+    * 调度 scite 事件以便多个 lua 脚本可以同时安装而不会冲突。 你可能拥有多个不同的脚本，每个都需要响应 OnOpen 事件，而 extman 让每个脚本共存。
 
-* [live markdown preview from SciTE](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/markdown.txt)
+* [来自 SciTE 的即时 markdown 预览](./files/helpers/markdown.txt)
 
-* [Mitchell's SciTE Tools](https://github.com/btakita/scite-tools), text-editing utilities including snippets.lua
+* [Mitchell 的 SciTE 工具](https://github.com/btakita/scite-tools)，包括 snippets.lua 的文本编辑工具
 
-* [Serge Baranov's scripts](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/perlformatters.txt) using Perl to reformat/clean up whitespace in a document
+* [Serge Baranov 的脚本](./files/helpers/perlformatters.txt) 使用 Perl 来重新格式化/清理文档中的空白
 
-* yipf's [SciTEStartup.lua](https://github.com/yipf/scite-files/blob/master/SciTEStartup.lua) has some useful scripts for automatically closing braces, expanding snippets when Tab is pressed, spell check, word counting, moving to the beginning/end of a sentence, and more
+* yipf 的 [SciTEStartup.lua](https://github.com/yipf/scite-files/blob/master/SciTEStartup.lua) 有一些有用的脚本用于自动闭合括号，当按下 Tab 时展开代码段，拼写检查，单词计数，移到一个句子的开始/结尾，诸如此类
 
-* I've [archived the content of lua-users SciTE scripts](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/lua-users-scite-scripts.zip) using wayback machine to recover most of the missing content. containing many lua scripts for SciTE, including scripts for AsciiTable, AutoCompleteAnyLanguage, AutoExpansion, BackupFile, BufferSwitch, Calculator, CleanDocWhitespace, CleanWhiteLines, ColouriseDemo, CommentBox, ConvertDecHex, CustomFolding, Debug, DeleteBlankLines, DisplayFunctions, EditWithVim, ElizaClassic, ExternalFileBrowser, ExtMan, Favs, FileBrowser, FuncList, HexEdit, Hexify, HtmlEntities, Indentation, InplaceCalculator, InsertDate, JavadocComment, Latex, LineBreak, ListAllOccurances, LuaDll, LuaPrompt, MacroExpander, MakeMonospace, ManPages, MarkWord, MergeOnChange, MiscScripts, NumberedBookmarks, OpenFilename, OpenPhpLocalhost, OpenToLine, OpenUrl, Other, ProcessString, Programmers, ProgrammingUtils, QuickStartXhtml, ReadTags, RunOneScript, ScriptManager, Scripts, SimpleTemplate, SortSelection, StripTrailings, TabsToSpacesObserveTabstop, Tags, TextFolding, TicTacToe, TitleCase, UnicodeInput, UsingUnicode, WordSelect, WordSubstitution, and XmlAutocompletion. The original wiki was [here](http://lua-users.org/wiki/SciteScripts)
+* 我已[存档了 lua-users SciTE 脚本的目录](./files/helpers/lua-users-scite-scripts.zip) 使用时光机(wayback machine)来恢复大部分缺少的内容。包括许多用于 SciTE 的 lua 脚本，包括用于 AsciiTable, AutoCompleteAnyLanguage, AutoExpansion, BackupFile, BufferSwitch, Calculator, CleanDocWhitespace, CleanWhiteLines, ColouriseDemo, CommentBox, ConvertDecHex, CustomFolding, Debug, DeleteBlankLines, DisplayFunctions, EditWithVim, ElizaClassic, ExternalFileBrowser, ExtMan, Favs, FileBrowser, FuncList, HexEdit, Hexify, HtmlEntities, Indentation, InplaceCalculator, InsertDate, JavadocComment, Latex, LineBreak, ListAllOccurances, LuaDll, LuaPrompt, MacroExpander, MakeMonospace, ManPages, MarkWord, MergeOnChange, MiscScripts, NumberedBookmarks, OpenFilename, OpenPhpLocalhost, OpenToLine, OpenUrl, Other, ProcessString, Programmers, ProgrammingUtils, QuickStartXhtml, ReadTags, RunOneScript, ScriptManager, Scripts, SimpleTemplate, SortSelection, StripTrailings, TabsToSpacesObserveTabstop, Tags, TextFolding, TicTacToe, TitleCase, UnicodeInput, UsingUnicode, WordSelect, WordSubstitution 和 XmlAutocompletion 的脚本。原始的维基[在这里](http://lua-users.org/wiki/SciteScripts)
 
-* here are [some lua scripts from the my-scite project](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/my_scite_scripts.zip) including AutoComplete, Calculator, HexEdit, Socket, and sortText. myScite also includes completing snippets, the orthospell spell-checker, custom language parsers via scintillua, debugging/stepping capabilities, and a sidebar for lua ui. see more at the [myScite project](https://github.com/arjunae/myScite). 
+* 这里是[来自 my-scite 项目的一些 lua 脚本](./files/helpers/my_scite_scripts.zip) 包括 AutoComplete, Calculator, HexEdit, Socket 和 sortText。 myScite 还包括补全代码片段， orthospell 拼写检查器，经由 scintillua 的自定义语法解析器，调试/步进功能以及一个用于 lua 用户界面的侧栏。[myScite 项目](https://github.com/arjunae/myScite)了解更多。
 
-* here are [some lua scripts from the scite-ru project](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/scite-ru-scripts.zip) including move_lines, abbrevlist, ascii_table, auto_backup, auto_complete_object, change_comment_char, codepage, code_poster2, code_poster_html, color_set, copymarkedlines, css_formatter, event_manager, exec, find_text, fold_text, font_changer, goto_line, highlighting_identical_text, highlighting_text, highlight_links, html_tags_autoclose, indent_tab_to_space, insertspecialchar, lexer_name, luainspect_install, macro_support, make_abbrev, movemenuitem, new_file, open_selected_filename, open_find_files, paired_tags, readonly, recode, rename, restore_recent, rocheck, rowrite, save_settings, set_html, showcalltip, sidebar, smartbraces, smartcomment, sort_text, style_changer, svn_menu, translit, url_detect, value, xcomment, and zoom
+* 这里是[来自 scite-ru 项目的一些 lua 脚本](./files/helpers/scite-ru-scripts.zip) 包括 move_lines, abbrevlist, ascii_table, auto_backup, auto_complete_object, change_comment_char, codepage, code_poster2, code_poster_html, color_set, copymarkedlines, css_formatter, event_manager, exec, find_text, fold_text, font_changer, goto_line, highlighting_identical_text, highlighting_text, highlight_links, html_tags_autoclose, indent_tab_to_space, insertspecialchar, lexer_name, luainspect_install, macro_support, make_abbrev, movemenuitem, new_file, open_selected_filename, open_find_files, paired_tags, readonly, recode, rename, restore_recent, rocheck, rowrite, save_settings, set_html, showcalltip, sidebar, smartbraces, smartcomment, sort_text, style_changer, svn_menu, translit, url_detect, value, xcomment 和 zoom
 
-* here are [some lua scripts from the scite_scripts project](https://github.com/mkottman/scite_scripts) including gitdiff, mark_word, and xml_close_tag
+* 这里是[来自 scite_scripts 项目的  一些 lua 脚本](https://github.com/mkottman/scite_scripts) 包括 gitdiff, mark_word 和 xml_close_tag
 
-* [Lua Exporters](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/SciTELuaExporters-0.9.11.zip)  includes an enhanced PDF exporter (with line wrapping and kerning), an OpenOffice.org format exporter, an AbiWord format exporter, and an ODT (Open Document) exporter.
+* [Lua Exporters](./files/helpers/SciTELuaExporters-0.9.11.zip)  包括一个增强的 PDF 导出器(带换行和字距调整)，一个 OpenOffice.org 格式的导出器，一个 AbiWord 格式的导出器，和一个 ODT (Open Document) 导出器。
 
-* Kein-Hong Man has developed a [calculator script](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/scite_calculator.zip) and [hex editor script](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/scite_hexedit.zip) that run within SciTE
+* Kein-Hong Man 已开发了在 SciTE 中运行的[计算器脚本](./files/helpers/scite_calculator.zip) 和 [hex 编辑器脚本](./files/helpers/scite_hexedit.zip)
 
-### Lua utilities
+### Lua 工具
 
-Building blocks for SciTE lua scripts
+为 SciTE lua 脚本构建块
 
-* [moltenform_scite_utils.lua](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/moltenform_scite_utils.lua) and its [API documentation](./files/helpers/moltenform_scite_utils_api.md)
+* [moltenform_scite_utils.lua](./files/helpers/moltenform_scite_utils.lua) 和它的 [API 文档](./files/helpers/moltenform_scite_utils_api.md)
 
-* [extman](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/extman.zip)
+* [extman](./files/helpers/extman.zip)
 
-* [some lua utilities from the myscite project](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/my_scite_lua.zip) including running COM from lua, listing lua definitions, parsing CTags, and adding per-project CTags support, and snippets. also, lua utilities for bit manipulation, classes, md5, regular expresions, and the "serpent" pretty printer.
+* [来自 myscite 项目的一些 lua 实用工具](./files/helpers/my_scite_lua.zip) 包括从 lua 运行 COM，列出 lua 定义，解析 CTags，并添加基于每个项目的 CTags 支持，和代码片段。还有用于位操纵、类、md5、正则表达式的 lua 实用工具，以及 "serpent" 美化打印机。
 
-* [scite_msg](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/scite_msg.zip) 
+* [scite_msg](./files/helpers/scite_msg.zip) 
 
-    * a command-line tool that can send messages to a scite window, by Ben Fisher (uses some code from scite_other)
+    * 可以发送消息到 scite 窗口的命令行工具，由 Ben Fisher 开发(使用来自 scite_other 的一些代码)
 
-* [scite_other](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/scite_other.zip) 
+* [scite_other](./files/helpers/scite_other.zip) 
 
-   * example code that finds a SciTE instance and sends it a message, or starts a new SciTE instance if none found, by Steve Donovan
+   * 查找 SciTE 实例并给它发送一条消息，若找不到则启动一个新 SciTE 实例，由 Steve Donovan 开发
    
-* [lua_shell_dll](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/lua_shell_dll.zip)
+* [lua_shell_dll](./files/helpers/lua_shell_dll.zip)
 
-    * this lua extension library, place in the same directory as scite, allows scite lua scripts to call:
-    * `shell.msgbox` Showing text message with buttons.
-    * `shell.inputbox` Display dialog box for input some text value.
+    * 这个 lua 扩展库，位于和 scite 同一目录中，允许 scite lua 脚本调用:
+    * `shell.msgbox` 显示带按钮的文本消息。
+    * `shell.inputbox` 显示对话框用于输入某些文本值。
     * `shell.getfileattr`, `shell.setfileattr`, `shell.fileexists
-    * `shell.exec` a prettier 'exec' (to start a process) that doesn't show a window
-    * `shell.findfiles` Searches for files and folders with mask and returned result as the table.
+    * `shell.exec` 一个不显示窗口的更漂亮的 'exec' (用于启动一个进程)
+    * `shell.findfiles` 使用掩码搜索文件和文件夹，并按表格返回结果。
 
-* [scite_lua_startprocess](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/scite_lua_startprocess.zip) 
+* [scite_lua_startprocess](./files/helpers/scite_lua_startprocess.zip) 
 
-    * this lua extension library, place in the same directory as scite, allows scite lua scripts to call:
-    * `shell.exec` a prettier 'exec' (to start a process) that doesn't show a window
+    * 这个 lua 扩展库，位于和 scite 同一目录中，允许 scite lua 脚本调用:
+    * `shell.exec` 一个不显示窗口的更漂亮的 'exec' (用于启动一个进程)
     
-* [SciTE.Helper](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/SciTE.Helper.zip) 
+* [SciTE.Helper](./files/helpers/SciTE.Helper.zip) 
 
-    * an ActiveX control that can send messages to scite, can be used by jscript/vbscript and probably a hta UI
+    * 一个可以发送消息给 scite 的 ActiveX 控件，可以被 jscript/vbscript 也可能一个 hta 用户界面所使用
     
-* [scite-strip-wrapper](https://github.com/klonuo/scite-strip-wrapper) shows how to add strip dialog in SciTE so that your lua scripts can show UI
+* [scite-strip-wrapper](https://github.com/klonuo/scite-strip-wrapper) 显示如何在 SciTE 中添加带式对话框，以便你的 lua 脚本可以显示用户界面
 
-### Gui addons / patches
+### Gui 附加组件/补丁
 
-* [sciteproj](https://savannah.nongnu.org/projects/sciteproj/), project manager for SciTE 
+* [sciteproj](https://savannah.nongnu.org/projects/sciteproj/), 用于 SciTE 的项目管理器
 
-* [SciTE sidebar extension](http://valentin.dasdeck.com/projects/scite_sidebar/), adds tabs for opening files, ftp, functions, and more
+* [SciTE 侧栏扩展](http://valentin.dasdeck.com/projects/scite_sidebar/)，添加标签页用于打开文件、FTP、函数等等
 
-* [hilfer](https://rubygems.org/gems/hilfer/), keyboard-rich directory browser using ruby-gtk that talks to SciTE
+* [hilfer](https://rubygems.org/gems/hilfer/), 使用和 SciTE 对话的 ruby-gtk 的 keyboard-rich (键盘功能丰富)目录浏览器
 
-* [Steve D's SciTE-GUI](https://groups.google.com/forum/#!topic/scite-interest/yZubpejP-bM) extension for SciTE Lua to add lists, file and colour dialogs, floating toolbar, and more
+* [Steve D 的 SciTE-GUI](https://groups.google.com/forum/#!topic/scite-interest/yZubpejP-bM) 扩展，用于 SciTE Lua 来添加列表、文件和颜色对话框，浮动工具栏等
 
-* [scite-gui](https://github.com/frank-w/scite-gui) GTK tool for changing SciTE settings, last updated 2010
+* [scite-gui](https://github.com/frank-w/scite-gui) 用于更改 SciTE 设置的 GTK 工具，最后更新于 2010
 
-* [Example Ruby extension](https://groups.google.com/forum/#!topic/scite-interest/cl6DogvZz2k)
+* [示例 Ruby 扩展](https://groups.google.com/forum/#!topic/scite-interest/cl6DogvZz2k)
 
-### Add to this page
+### 添加到本页
 
-You can add to this page by submitting a pull request, or sending an e-mail to scitewiki at gmail dot com
+你可以通过添加 pull 请求或者发送电邮给 scitewiki at gmail dot com 来添加到本页
 
