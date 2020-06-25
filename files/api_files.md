@@ -1,571 +1,571 @@
 
 
-* [back](../README.md)
-* [how to install a .api or .properties file from the list below](api_files_howto.md) (to enable calltips + completion)
-* [how to create a .api file for your own code](api_files_howto_create_api.md)
-* [how to add highlighting/folding for a new language](api_files_howto_create_lexer.md)
+* [返回](../README.md)
+* [如何安装来自下表中的 .api 或 .properties 文件](api_files_howto.md) (以启用调式提示+补全)
+* [如何为你自己的代码创建一个 .api 文件](api_files_howto_create_api.md)
+* [如何为一个新语言添加加亮/折叠](api_files_howto_create_lexer.md)
 
-### Languages
+### 语言
 
 <!-- website refers to these, but I don't see them in properties: Clarion, Progress, Asymptote, TADS3, Gui4Cli, PL/M, PowerBasic -->
 <!-- these lexers are available, but not referred to, set(['', 'SML', 'mysql', 'powerbasic','', 'kvirc', '', 'cppnocase', '', 'a68k', 'po', 'DMIS', '', 'bib', '', 'clarionnocase', 'tcmd', 'DMAP', 'PL/M', 'mssql', 'phpscript', 'clarion', 'fcST', 'magiksf', 'gui4cli', '']) -->
 <!-- these lexers are available and just need to be turned on manually, as described below: markdown, visualprolog, tads3, progress , asy, literatehaskell, apdl -->
 
-* HTML, CSS, and JavaScript
+* HTML, CSS 和 JavaScript
 
-    * HTML, CSS, and JavaScript have highlighting and folding already enabled by default
-    * [JavaScript API file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/javascript.api)
-    * [JavaScript JQuery API file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/javascript_jquery.api) and [properties](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/javascript.properties)
-    * [css api](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/css.api)
-    * [html api](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/html.api)
+    * HTML, CSS 和 JavaScript 默认情况下已启用加亮和折叠
+    * [JavaScript API 文件](./files/api_files/javascript.api)
+    * [JavaScript JQuery API 文件](./files/api_files/javascript_jquery.api) 和 [properties](./files/api_files/javascript.properties)
+    * [css api](./files/api_files/css.api)
+    * [html api](./files/api_files/html.api)
 
 * Abaqus
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `abaqus`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `abaqus`，然后保存并重启 SciTE
 
 * ActionScript (Flash)
 
-    * highlighting and folding is already enabled by default
-    * [actionscript api](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/actionscript.api)
+    * 默认情况下已启用加亮和折叠
+    * [actionscript api](./files/api_files/actionscript.api)
 
 * Ada
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * AMPL
 
-    * [Properties file, api file, tools and setup instructions.](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/ampl.zip)
+    * [Properties 文件、api 文件、工具和设置说明](./files/api_files/ampl.zip)
 
 * APDL
 
-    * highlighting and folding is enabled after the properties file below is installed
-    * [APDL properties and API](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/apdl.zip)
+    * 在安装了下列属性文件后启用加亮和折叠
+    * [APDL properties 和 API](./files/api_files/apdl.zip)
 
 * Assembler (NASM/MASM)
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
     
-* Asl (ACPI Source)
+* Asl (ACPI 源代码)
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `asl`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `asl`，然后保存并重启 SciTE
 
 * ASN.1 MIB
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `asn1`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `asn1`，然后保存并重启 SciTE
     
 * ASP
 
-    * highlighting and folding is already enabled by default
-    * [ASP API methods](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/asp.api)
-    * Edit html.properties to set the language of scripts in ASP code
-        * If asp.default.language=1, script in an ASP code block is JavaScript
-        * If asp.default.language=2, script in an ASP code block is VBScript
-        * If asp.default.language=3, script in an ASP code block is Python
+    * 默认情况下已启用加亮和折叠
+    * [ASP API methods](./files/api_files/asp.api)
+    * 编辑 html.properties 以设置 ASP 代码中的脚本的语言
+        * 若 asp.default.language=1，在 ASP 代码块中的脚本是 JavaScript
+        * 若 asp.default.language=2, 在 ASP 代码块中的脚本是 VBScript
+        * 若 asp.default.language=3, 在 ASP 代码块中的脚本是 Python
 
 * Asymptote
 
-    * highlighting and folding is enabled after the properties file below is installed
-    * [Properties file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/asymptote.properties)
+    * 在安装了下列属性文件后启用加亮和折叠
+    * [Properties f文件ile](./files/api_files/asymptote.properties)
     
 * Auto It3 
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `au3`, then save and restart SciTE
-    * [SciTE4AutoIt3 Website containing Auto It3 related properties and API files.](https://www.autoitscript.com/site/autoit-script-editor/)
-    * [au3 API file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/au3.api)
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`, 查找 `imports.exclude=`, 删除 `au3`，然后保存并重启 SciTE
+    * [SciTE4AutoIt3 网站包含 Auto It3 相关的 properties 和 API 文件。](https://www.autoitscript.com/site/autoit-script-editor/)
+    * [au3 API 文件](./files/api_files/au3.api)
 
 * AutoHotkey (AHK)
 
-    * [AutoHotkey properties](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/ahk.properties)
+    * [AutoHotkey properties](./files/api_files/ahk.properties)
     * [SciTE4AutoHotkey](https://github.com/fincs/SciTE4AutoHotkey) custom SciTE build for ahk
-    * [ahk API file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/ahk.api)
+    * [ahk API 文件](./files/api_files/ahk.api)
 
-* AutoCAD Dialog Box components
+* AutoCAD 对话框组件
 
-    * [DCL properties](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/adcl.properties)
+    * [DCL properties](./files/api_files/adcl.properties)
 
 * Avenue (Ave)
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `ave`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `ave`，然后保存并重启 SciTE
 
 * AviSynth (avs)
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `avs`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `avs`，然后保存并重启 SciTE
 
 * baan
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `baan`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `baan`，然后保存并重启 SciTE
 
 * Batch files (MS-DOS)
 
-    * highlighting and folding is already enabled by default
-    * [API Files for Batch](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/batch.api.zip) (API files for NT, XP/2003, GNUWin32 UnixUtils and SysInternals commands)
+    * 默认情况下已启用加亮和折叠
+    * [批处理的 API 文件](./files/api_files/batch.api.zip) (用于 NT, XP/2003, GNUWin32 UnixUtils 和 SysInternals 命令的 API 文件)
 
 * Bash
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * BlitzBasic
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `blitzbasic`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `blitzbasic`，然后保存并重启 SciTE
 
 * Bullant
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `bullant`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `bullant`，然后保存并重启 SciTE
     
 * C/C++
 
-    * highlighting and folding is already enabled by default
-    * [C standard library](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/c_withdoc.api) with short doc strings
-    * [C standard library](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/c.api)
-    * [C++ standard library, incl C++11](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/cpp.api)
-    * [cpp_more.properties](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/cpp_more.properties) adds highlighting for c99, c11, cpp98, cpp11, Objective C, idl, Doxygen, Arduino, go, Actionscript, vala, pike, swift
-    * [Windows API, cpp](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/cpp_win32.api)
-    * [OpenGL 1.2 API](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/opengl.api)
-    * [OpenGL 4.4 API](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/glext.api)
-    * [Glut API](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/glut.api)
-    * [SDL API](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/sdl.api)
+    * 默认情况下已启用加亮和折叠
+    * [C 标准库](./files/api_files/c_withdoc.api) 带简短的 doc 字符串
+    * [C 标准库](./files/api_files/c.api)
+    * [C++ 标准库，包括 C++11](./files/api_files/cpp.api)
+    * [cpp_more.properties](./files/api_files/cpp_more.properties) 添加用于 c99, c11, cpp98, cpp11, Objective C, idl, Doxygen, Arduino, go, Actionscript, vala, pike, swift 的加亮
+    * [Windows API, cpp](./files/api_files/cpp_win32.api)
+    * [OpenGL 1.2 API](./files/api_files/opengl.api)
+    * [OpenGL 4.4 API](./files/api_files/glext.api)
+    * [Glut API](./files/api_files/glut.api)
+    * [SDL API](./files/api_files/sdl.api)
 
 * C#
 
-    * highlighting and folding is already enabled by default
-    * [C# csharp api](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/c_sharp.api)
+    * 默认情况下已启用加亮和折叠
+    * [C# csharp api](./files/api_files/c_sharp.api)
 
 * CIL 
 
-    * [Properties for CIL/MSIL](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/il.properties)
+    * [CIL/MSIL 的 Properties](./files/api_files/il.properties)
 
 * Clojure
 
-    * [a lisp.properties including support for Scheme and Clojure](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/lisp_and_closure.properties)
-    * [api file for Clojure](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/clojure.api)
+    * [一个包含了用于 Scheme 和 Clojure 支持的一个 lisp.properties](./files/api_files/lisp_and_closure.properties)
+    * [Clojure 的 api 文件](./files/api_files/clojure.api)
 
 * CMake
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `cmake`, then save and restart SciTE
-    * [CMake API](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/cmake.api)
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `cmake`，然后保存并重启 SciTE
+    * [CMake API](./files/api_files/cmake.api)
 
 * COBOL
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `cobol`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `cobol`，然后保存并重启 SciTE
 
 * Cobra
 
-    * [Properties for Cobra and Cobraproj](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/cobra.zip)
+    * [用于 Cobra 和 Cobraproj 的 Properties](./files/api_files/cobra.zip)
 
 * coffeescript
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `coffeescript`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `coffeescript`，然后保存并重启 SciTE
 
 * conf (Apache)
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * csound
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `csound`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `csound`，然后保存并重启 SciTE
 
 * D
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * Delphi
 
-    * highlighting and folding is already enabled by default
-    * [Delphi api files and abbrevs](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/delphi_extras.zip) 
+    * 默认情况下已启用加亮和折叠
+    * [Delphi api 文件和缩写](./files/api_files/delphi_extras.zip) 
 
 * diff files
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * ecl
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `ecl`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `ecl`，然后保存并重启 SciTE
 
 * Eiffel
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `eiffel`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `eiffel`，然后保存并重启 SciTE
 
 * Erlang
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `erlang`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `erlang`，然后保存并重启 SciTE
 
 * E-Script (escript)
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `escript`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `escript`，然后保存并重启 SciTE
 
 * Flagship
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `flagship`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `flagship`，然后保存并重启 SciTE
     
 * Forth
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `forth`, then save and restart SciTE
-    * [api file for Forth](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/forth.api)
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `forth`，然后保存并重启 SciTE
+    * [Forth 的 api 文件](./files/api_files/forth.api)
     
 * Fortran
 
-    * highlighting and folding is already enabled by default
-    * [Standard FORTRAN API functions](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/fortran.api)
+    * 默认情况下已启用加亮和折叠
+    * [标准 FORTRAN API 函数](./files/api_files/fortran.api)
 
 * Freebasic
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `freebasic`, then save and restart SciTE
-    * [properties file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/freebasic.properties) that highlights more keywords
-    * [api file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/freebasic.api)
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `freebasic`，然后保存并重启 SciTE
+    * 加亮更多关键字的[属性文件](./files/api_files/freebasic.properties)
+    * [api 文件](./files/api_files/freebasic.api)
     
 * GAP
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `gap`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `gap`，然后保存并重启 SciTE
 
 * Gettext
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
     
 * GLPK/GMPL (MathProg)
 
-    * a LP/MILP IDE based on SciTE can be found [here](https://sourceforge.net/projects/gusek/?source=directory)
+    * 可以在[这里](https://sourceforge.net/projects/gusek/?source=directory)找到一个基于 SciTE 的 LP/MILP IDE
 
 * Go
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * Haml
 
-    * [properties file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/haml.properties)
+    * [properties 文件](./files/api_files/haml.properties)
 
 * Haskell
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `haskell`, then save and restart SciTE
-    * literatehaskell support can be enabled by copying `haskell.properties` to `lhaskell.properties`, changing all references to .hs to .lhs, and changing the line `lexer.*.lhs=haskell` to `lexer.*.lhs=literatehaskell`
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `haskell`，然后保存并重启 SciTE
+    * literatehaskell 支持可以通过复制 `haskell.properties` 到 `lhaskell.properties` 来启用，更改所有对 .hs 的引用为 .lhs，并更改 `lexer.*.lhs=haskell` 行为 `lexer.*.lhs=literatehaskell`
 
 * Intel HEX (hex)
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `hex`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `hex`，然后保存并重启 SciTE
 
 * InnoSetup (inno)
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `inno`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `inno`，然后保存并重启 SciTE
 
 * IDL/MSIDL/XPIDL
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * indent
 
-    * a lexer for plain text docs that supports folding on indentation levels
-    * highlighting and folding is already enabled by default
+    * 一个支持在缩进级别上折叠的纯文本文档的词法分析器
+    * 默认情况下已启用加亮和折叠
 
 * INI
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * Java <!-- used to link to https://www.burgaud.com/scite-java-api/ , but put this info in instructions instead -->
     
-    * highlighting and folding is already enabled by default
-    * [Java properties](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/java.properties), including Java 1.8 keywords
-    * [Java API](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/java.api)
-    * [Java API, other versions incl 1.5 and 1.6](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/javaversions.api.zip)
+    * 默认情况下已启用加亮和折叠
+    * [Java properties](./files/api_files/java.properties)，包括 Java 1.8 关键字
+    * [Java API](./files/api_files/java.api)
+    * [Java API，其它版本包括 1.5 和 1.6](./files/api_files/javaversions.api.zip)
     
-* json and json-ld
+* json 和 json-ld
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `json`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `json`，然后保存并重启 SciTE
 
 * KiXtart (kix)
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `kix`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `kix`，然后保存并重启 SciTE
 
 * LaTeX / TeX
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `latex`, then save and restart SciTE
-    * a [description](http://www.pragma-ade.com/general/manuals/scite-context-readme.pdf) and [Windows package](http://wiki.contextgarden.net/Windows_Installation:_ConTeXt_Suite_with_SciTe) of how to add highlighting, spellcheck, and extensions for using ConTeXt and SciTe
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `latex`，然后保存并重启 SciTE
+    * 如何添加加亮、拼写检查和使用 ConTeXt 和 SciTE 的扩展的[描述](http://www.pragma-ade.com/general/manuals/scite-context-readme.pdf)和 [Windows 包](http://wiki.contextgarden.net/Windows_Installation:_ConTeXt_Suite_with_SciTe)
     
 * LISP, Scheme (scm smd)
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
     
 * LOT
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `lot`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `lot`，然后保存并重启 SciTE
 
 * Lout
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `lout`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `lout`，然后保存并重启 SciTE
     
 * Lua  <!--  https://github.com/arjunae/myScite has a lua.properties with a few more keywords to highlight  -->
 
-    * highlighting and folding is already enabled by default
-    * [Lua standard library](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/lua.api)
-    * [Api for SciTE extension scripts](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/lua_scite_extension.api)
-    * [Lua 5.1, 5.2, 5.3 C API and luajit](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/lua_c_api.zip)
-    * [Lua 5.0 C API and standard library](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/lua_5.0_api.zip)
-    * [scite-for-lua](https://code.google.com/archive/p/scite-for-lua/), extensive support for Lua programming, including debugging and a lint-based highlighter
-    * [lua-inspect](https://github.com/davidm/lua-inspect), plugin for SciTE that does Lua code analysis and adds features like rename-occurrences and autocomplete
-    * [Api for wxLua](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/lua_wx.api)
-    * [Api for WoW lua](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/lua_wow.api)
+    * 默认情况下已启用加亮和折叠
+    * [Lua 标准库](./files/api_files/lua.api)
+    * [SciTE 扩展脚本的 API](./files/api_files/lua_scite_extension.api)
+    * [Lua 5.1, 5.2, 5.3 C API 和 luajit](./files/api_files/lua_c_api.zip)
+    * [Lua 5.0 C API 和标准库](./files/api_files/lua_5.0_api.zip)
+    * [scite-for-lua](https://code.google.com/archive/p/scite-for-lua/), 用于 Lua 编程的广泛支持，包括调试和一个基于 lint 的加亮工具
+    * [lua-inspect](https://github.com/davidm/lua-inspect), 用于 SciTE 的插件，可以进行 Lua 代码分析和添加功能，例如重命名多处出现位置和自动补全
+    * [wxLua 的 Api](./files/api_files/lua_wx.api)
+    * [WoW lua 的 Api](./files/api_files/lua_wow.api)
 
 * Make / makefile
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * markdown
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `markdown`, then save and restart SciTE
-    * an alternate [properties file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/markdown_alt.properties) for markdown
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `markdown`，然后保存并重启 SciTE
+    * 一个用于 markdown 的替代的 [properties 文件](./files/api_files/markdown_alt.properties)
 
 * Matlab
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * maxima
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `maxima`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `maxima`，然后保存并重启 SciTE
 
 * Metapost
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `metapost`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `metapost`，然后保存并重启 SciTE
 
-* MetaQuotes language (MQL4, MQL5, MT4)
+* MetaQuotes 语言 (MQL4, MQL5, MT4)
 
-    * [properties for MQL4, MQL5](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/mql.properties)
-    * The [scite-mql](https://github.com/ylw633/scite-mql) project adds syntax highlighting, autocomplete, parameter hints, and more for MT4 based code
+    * [MQL4, MQL5 的 properties](./files/api_files/mql.properties)
+    * [scite-mql](https://github.com/ylw633/scite-mql) 项目添加了语法加亮、自动补全、参数提示和更多用于基于 MT4 的代码
 
 * Microsoft SQL / MSSQL
 
-    * highlighting and folding is already enabled by default
-    * [Replace sql.properties with this, for better MSSQL support](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/mssql.properties)
+    * 默认情况下已启用加亮和折叠
+    * [使用这个替换 sql.properties，以获得更好的 MSSQL 支持](./files/api_files/mssql.properties)
 
 * MMIXAL
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `mmixal`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `mmixal`，然后保存并重启 SciTE
 
 * Modula 3 (modula3)
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `modula3`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `modula3`，然后保存并重启 SciTE
 
 * moonscript
 
-    * [properties](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/moonscript.properties)
-    * a package containing SciTE, scintillua, and moonscript highlighting can be found [here](http://leafo.net/posts/getting_started_with_moonscript.html)
+    * [properties](./files/api_files/moonscript.properties)
+    * 一个包含 SciTE, scintillua 和 moonscript 加亮的包可以在[这里](http://leafo.net/posts/getting_started_with_moonscript.html)找到
 
 * Nimrod
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `nimrod`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `nimrod`，然后保存并重启 SciTE
 
 * nncron / nncrontab
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `nncrontab`, then save and restart SciTE
-    * [nncron api file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/nncron.api) 
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `nncrontab`，然后保存并重启 SciTE
+    * [nncron api file](./files/api_files/nncron.api) 
 
 * NSIS (nullsoft install)
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `nsis`, then save and restart SciTE
-    * [nsis api file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/nsis.api) 
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `nsis`，然后保存并重启 SciTE
+    * [nsis api file](./files/api_files/nsis.api) 
 
 * Objective C
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
-* OCaml and mli/sml
+* OCaml 和 mli/sml
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * Octave
 
-    * highlighting and folding is already enabled by default
-    * [octave.api](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/octave.api)
+    * 默认情况下已启用加亮和折叠
+    * [octave.api](./files/api_files/octave.api)
 
 * Opal
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `opal`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `opal`，然后保存并重启 SciTE
 
 * Oracle 
 
-    * [Extended properties file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/sql_more.properties) with additional keywords and standard package names
-    * [sql plsql](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/sql_plsql.api.zip) properties file
+    * 使用额外的关键字和标准包名称[扩展的 properties 文件](./files/api_files/sql_more.properties)
+    * [sql plsql](./files/api_files/sql_plsql.api.zip) properties 文件
 
 * OScript
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `oscript`, then save and restart SciTE
-    * [oscript.api.zip](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/oscript.api.zip)
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `oscript`，然后保存并重启 SciTE
+    * [oscript.api.zip](./files/api_files/oscript.api.zip)
 
 * Pascal
 
-    * highlighting and folding is already enabled by default
-    * Pascal [API](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/pascal.api) 
-    * Pascal [Abbreviations](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/pascal.abbrev) 
+    * 默认情况下已启用加亮和折叠
+    * Pascal [API](./files/api_files/pascal.api) 
+    * Pascal [缩写](./files/api_files/pascal.abbrev) 
 
 * Perl
 
-    * highlighting and folding is already enabled by default
-    * [Perl API](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/perl.api)
-    * [Parrot properties file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/parrot_properties.zip)
+    * 默认情况下已启用加亮和折叠
+    * [Perl API](./files/api_files/perl.api)
+    * [Parrot properties 文件](./files/api_files/parrot_properties.zip)
 
 * PHP
 
-    * highlighting and folding is already enabled by default
-    * [php7.2.api](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/php7.2.api) (including core, bundled, pecl, and external functions) contributed by [arjunae](https://github.com/arjunae/myScite/tree/devel/contrib/SciTE.apifiles/apiDogs)
-    * [php.api, PHP 5](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/php.api)
-    * [php.api in Spanish, PHP 5](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/php-es.api)
-    * [PHP properties](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/php.properties)
+    * 默认情况下已启用加亮和折叠
+    * [php7.2.api](./files/api_files/php7.2.api) (包括 core, bundled, pecl 和外部函数)，由 [arjunae](https://github.com/arjunae/myScite/tree/devel/contrib/SciTE.apifiles/apiDogs) 贡献
+    * [php.api, PHP 5](./files/api_files/php.api)
+    * [php.api in Spanish, PHP 5](./files/api_files/php-es.api)
+    * [PHP properties](./files/api_files/php.properties)
 
 * PostScript
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `ps`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `ps`，然后保存并重启 SciTE
 
 * POV-Ray 
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `pov`, then save and restart SciTE
-    * [POV-Ray API](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/pov.api)
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `pov`，然后保存并重启 SciTE
+    * [POV-Ray API](./files/api_files/pov.api)
 
 * PowerPro
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `powerpro`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `powerpro`，然后保存并重启 SciTE
 
 * PowerShell (ps1/ps2)
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `powershell`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `powershell`，然后保存并重启 SciTE
 
 * Progress
 
-    * highlighting and folding is enabled after the properties file below is installed
-    * [Progress properties](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/progress.properties)
+    * 在安装了下列属性文件后启用加亮和折叠
+    * [Progress properties](./files/api_files/progress.properties)
 
 * PureBasic
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `purebasic`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `purebasic`，然后保存并重启 SciTE
 
 * Python
 
-    * highlighting and folding is already enabled by default
-    * api files and keywords files for [Python 3.8](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/python38.api.zip), [Python 3.7](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/python37.api.zip)
-    * [Automatically print the contents of local variables on unhandled exceptions](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/python_print_vars.zip)
-    * api file for [numpy](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/py_numpy.zip)
-    * api file for [scipy](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/py_scipy.zip)
-    * older [Python API](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/python.api) including PIL, psycho
+    * 默认情况下已启用加亮和折叠
+    * 适用于 [Python 3.8](./files/api_files/python38.api.zip), [Python 3.7](./files/api_files/python37.api.zip) 的 API 文件和关键字文件
+    * [在未处理的异常上自动打印局部变量的内容](./files/api_files/python_print_vars.zip)
+    * [numpy](./files/api_files/py_numpy.zip) 的 API 文件
+    * [scipy](./files/api_files/py_scipy.zip) 的 API 文件
+    * 较旧的 [Python API](./files/api_files/python.api)，包括 PIL, psycho
 
 * R
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `r`, then save and restart SciTE
-    * a [properties file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/r.properties) with additional keyword highlighting
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `r`，然后保存并重启 SciTE
+    * 一个带有额额外关键字加亮的 [properties 文件](./files/api_files/r.properties)
 
 * Rebol
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `rebol`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `rebol`，然后保存并重启 SciTE
 
 * Registry
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * Ruby
 
-    * highlighting and folding is already enabled by default
-    * [Ruby API](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/ruby.api)
+    * 默认情况下已启用加亮和折叠
+    * [Ruby API](./files/api_files/ruby.api)
 
 * Rust
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `rust`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `rust`，然后保存并重启 SciTE
     
 * Scheme
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * scriptol
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `scriptol`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `scriptol`，然后保存并重启 SciTE
     
 * Smalltalk
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `smalltalk`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `smalltalk`，然后保存并重启 SciTE
 
 * SORCUS Installation (sorcins)
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `sorcins`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `sorcins`，然后保存并重启 SciTE
 
 * Specman E (specman)
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `specman`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `specman`，然后保存并重启 SciTE
 
 * Spice
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `spice`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `spice`，然后保存并重启 SciTE
 
-* SQL and PLSQL <!--  https://github.com/arjunae/myScite has a sql.properties with a few more keywords to highlight  -->
+* SQL 和 PLSQL <!--  https://github.com/arjunae/myScite 拥有一个带有更多要加亮的关键字的 sql.properties  -->
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * S-Record
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * Swift
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * TACL
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `tacl`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `tacl`，然后保存并重启 SciTE
 
 * TADS3 
 
-    * highlighting and folding is enabled after the properties file below is installed
-    * [TADS3 property file and explanation](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/tads3.zip)
+    * 在安装了下列属性文件后启用加亮和折叠
+    * [TADS3 property 文件和展开](./files/api_files/tads3.zip)
 
 * TAL
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `tal`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `tal`，然后保存并重启 SciTE
     
 * Tcl/Tk
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * txt2tags
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `txt2tags`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `txt2tags`，然后保存并重启 SciTE
 
 * Vala
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * Verilog
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `verilog`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `verilog`，然后保存并重启 SciTE
 
 * VHDL
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `vhdl`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `vhdl`，然后保存并重启 SciTE
 
 * Visual Basic
 
-    * highlighting and folding is already enabled by default
-    * vb [properties file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/vb.properties) with more keywords
+    * 默认情况下已启用加亮和折叠
+    * 带有更多关键字的 vb [properties 文件](./files/api_files/vb.properties)
 
 * VBScript
 
-    * highlighting and folding is already enabled by default
-    * [vbscript api](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/vbscript.api)
-    * vbscript [properties file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/vbscript.properties)
-    * [vba api file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/vba.api)
+    * 默认情况下已启用加亮和折叠
+    * [vbscript api](./files/api_files/vbscript.api)
+    * vbscript [properties 文件](./files/api_files/vbscript.properties)
+    * [vba api 文件](./files/api_files/vba.api)
 
 * visualprolog
 
-    * to enable highlighting and folding, open `SciTEGlobal.properties`, look for `imports.exclude=`, delete `visualprolog`, then save and restart SciTE
+    * 要启用加亮和折叠，打开 `SciTEGlobal.properties`，查找 `imports.exclude=`，删除 `visualprolog`，然后保存并重启 SciTE
 
 * Windows Scripting 
 
-    * [Properties files](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/windows_scripting.zip)
-    * [More files and scripts](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/windows_scripting_scripts.zip), refer to readme.txt
-    * [wsh.api](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/wsh.api) for vbscript calling into ActiveX objects like Scripting.FileSystemObject
+    * [Properties 文件](./files/api_files/windows_scripting.zip)
+    * [更多文件和脚本](./files/api_files/windows_scripting_scripts.zip)，参考 readme.txt
+    * [wsh.api](./files/api_files/wsh.api) 用于 vbscript 调用入 ActiveX 对象，如 Scripting.FileSystemObject
 
 * XML
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
 * YAML
 
-    * highlighting and folding is already enabled by default
+    * 默认情况下已启用加亮和折叠
 
-The scintillua project adds highlighting and folding for more than 120 languages, but it requires configuration to install. scintillua can be downloaded from [here](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/scintillua.zip), and see doc/manual.md. A .properties file is still needed to map the file extension to the lexer, more information [here](https://foicica.com/scintillua/README.html).
+Scintillua 项目为超过 120 种语言添加了高亮和折叠功能，但是它需要安装配置。 scintillua 可以从[这里](./files/api_files/scintillua.zip)下载，请查阅 doc/manual.md。 仍需要一个 .properties 文件来映射文件扩展名到词法分析器，更多信息[在这里](https://foicica.com/scintillua/README.html)。
 
-To contribute a file to this list, send an e-mail to scitewiki at gmail dot com or submit a pull request. 
+要在这个列表中贡献文件，发送电邮给 scitewiki at gmail dot com 或提交一个 pull request。
 
-How to install a file downloaded above? Refer to the links at the top of this page for instructions.
+如何安装上面下载的文件? 参考在本页顶部的链接了解说明。
