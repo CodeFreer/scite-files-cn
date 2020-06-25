@@ -1,12 +1,12 @@
 
-[back](api_files.md) 
+[返回](api_files.md) 
 
 <a name="how_to_make_api"></a>
-### How to make an api file
+### 如何制作一个 API 文件
 
-An api file is a plain text file with one entry per line.
+API 文件就是具有每行一个条目格式的纯文本文件。
 
-For example, an api file for the C standard library could look like this,
+例如，用于 C 标准库的 API 文件可能看起来这样，
 
 ```
 abort();
@@ -15,7 +15,7 @@ acos(double x);
 asctime(const struct tm* tp);
 ```
 
-If use.escapes is enabled, information can span multiple lines, for example,
+如果启用 use.escapes，那么信息可以跨多行，例如，
 
 ```
 abort() Param: ()\t\nDesc: Abort current process
@@ -23,19 +23,19 @@ abs(double x) Param: (Value whose absolute value is returned.)\t\nDesc: Compute 
 acos(double x) Param: (Value whose arc cosine is computed, in the interval [-1,+1].)\t\nDesc: Compute arc cosine
 ```
 
-To generate api files for your own source code, one of these tools may be helpful:
+要生成用于你自己的源代码的 API 文件，这些工具可能会有用:
 
-* For C/C++ headers, an api file can be generated using [ctags](http://ctags.sourceforge.net/) and then the [tags2api](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/tags2api.py) Python script (which assumes C/C++ source) on the tags file to grab complete multiple line function prototypes. Some common headers surround parameter lists with a __P macro and may have comments. The [cleanapi](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/cleanapi.cc) utility may be used on these files
-* For Python, there is a [gen_python_3_api](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/mpheath_gen_python_3_api.py) script (and older scripts for [python3](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/gen_python_3_api.py) and [python2](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/gen_python_api.py).)
-* For Java classes, there is a [java_apibuilder.zip](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/java_apibuilder.zip) program
-* For C# classes, use [genapi.cs](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/gen_csgenapi.zip)
-* For PHP, use [php-api-generator](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/gen_php-api-generator.zip) or [phpapi.php](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/phpapi.php.txt)
-* API files for the latest PHP standard libraries can be generated with the tool [here](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/gen_php-from-online-docs.zip), contributed by arjunae
-* API files for the latest C++ standard can be generated with the script [here](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/gen_cpp_cplusplusdotcom.zip)
-* API files for the latest jquery can be generated with the script [here](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/gen_jquery.zip)
-* API files for the latest javascript (from MSDN) can be generated with the script [here](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/gen_msdn_javascript.zip)
-* API files for the latest wsh/vbs/vba (from MSDN) can be generated with the script [here](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_gen/gen_msdn_wsh_vba.zip)
+* 对于 C/C++ 头文件，生成 API 文件可以使用 [ctags](http://ctags.sourceforge.net/) 然后在 tags 文件上使用 [tags2api](./files/api_files_gen/tags2api.py) Python 脚本(它假定是 C/C++ 源代码)来收集完整的多行函数原型。一些常见的头文件使用一个 \__P 宏围住参数列表，并可能有注释。[cleanapi](./files/api_files_gen/cleanapi.cc) 工具可能在这些文件上使用
+* 对于 Python，有一个 [gen_python_3_api](./files/api_files_gen/mpheath_gen_python_3_api.py) 脚本(还有较旧的脚本用于 [python3](./files/api_files_gen/gen_python_3_api.py) 和 [python2](./files/api_files_gen/gen_python_api.py)。)
+* 对于 Java 类，有一个 [java_apibuilder.zip](./files/api_files_gen/java_apibuilder.zip) 程序
+* 对于 C# 类，使用 [genapi.cs](./files/api_files_gen/gen_csgenapi.zip)
+* 对于 PHP，使用 [php-api-generator](./files/api_files_gen/gen_php-api-generator.zip) 或 [phpapi.php](./files/api_files_gen/phpapi.php.txt)
+* 用于最新 PHP 标准库的 API 文件可以使用[这里](./files/api_files_gen/gen_php-from-online-docs.zip)的工具生成，由 arjunae 贡献
+* 用于最新 C++ 标准的 API 文件可以使用[这里](./files/api_files_gen/gen_cpp_cplusplusdotcom.zip)的脚本生成
+* 用于最新 jquery 的 API 文件可以使用[这里](./files/api_files_gen/gen_jquery.zip)的脚本生成
+* 用于最新 javascript (来自 MSDN) 的 API 文件可以使用[这里](./files/api_files_gen/gen_msdn_javascript.zip)的脚本生成
+* 用于最新 wsh/vbs/vba (来自 MSDN) 的 API 文件可以使用[这里](./files/api_files_gen/gen_msdn_wsh_vba.zip)的脚本生成
 
-Activate an api file by following the instructions [here](api_files_howto_install_api.md).
+按照[这里](api_files_howto_install_api.md)的说明激活一个 API 文件
 
-To see more advanced settings, search for "calltip" in the [SciTE Documentation](http://www.scintilla.org/SciTEDoc.html).
+要查看更高级的设置，搜索 [SciTE 文档](http://www.scintilla.org/SciTEDoc.html)中的"calltip"(调用提示)
