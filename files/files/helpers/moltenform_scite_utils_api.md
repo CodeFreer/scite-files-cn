@@ -1,11 +1,11 @@
 
-[back to "adding scite features with lua"](adding_scite_features_with_lua.md)
+[返回到"使用 Lua 添加 scite 功能"](adding_scite_features_with_lua.md)
 
 ## API 
 
-API for [moltenform_scite_utils.lua](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/moltenform_scite_utils.lua), by Ben Fisher.
+[moltenform_scite_utils.lua](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/helpers/moltenform_scite_utils.lua) 的 API，由 Ben Fisher 提供。
 
-| ScApp methods |  |
+| ScApp 方法 |  |
 | ------------- | ------------- |
 | ScApp:Trace(s) | Print to the output pane |
 | ScApp:OpenFile(filename) | Open a file (will reset lua's state, remember to require() dependencies again) |
@@ -1174,4 +1174,4 @@ The following constants are defined,
 | VISIBLE\_STRICT | 
 
 
-More information is available in the [official documentation](http://www.scintilla.org/ScintillaDoc.html).
+更多信息在[官方文档](http://www.scintilla.org/ScintillaDoc.html)提供。
