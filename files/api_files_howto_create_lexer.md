@@ -1,19 +1,19 @@
 
-[back](api_files.md)
+[返回](api_files.md)
 
-### Add highlighting/folding for a new language
+### 为一个新语言添加加亮/折叠
 
-If the language is similar enough to a language already supported by SciTE, you might be able to copy the properties file for that language and change to it to match your new language.
+如果该语言和 SciTE 已支持的一种语言足够相似的话，那么你可以复制用于那种语言的 properties 文件并更改它以匹配你的新语言。
 
-If this does not work, you can write a piece of code that SciTE calls a "lexer".
+如果这样不行的话，那么你可以编写一段代码，SciTE 称之为 "lexer"(词法分析器)。
 
-* a lexer defines how to add syntax highlighting and/or folding
+* 词法分析器定义如何添加语法加亮和/或折叠
 
-* it's less complex than truly parsing the file that the user is editing
+* 这比真正解析用户正在编辑的文件要简单得多。
 
-* in recent versions of SciTE, a lexer can be written in the Lua language (simpler and doesn't require a C++ compiler)
+* 在最新版本的 SciTE 中，可以用 Lua 语言编写一个词法分析器(更简单且不需要 C++ 编译器)
 
-* documentation on [Writing a lexer in the Lua language](https://www.scintilla.org/ScriptLexer.html) 
+* [使用 Lua 语言编写一个词法分析器](https://www.scintilla.org/ScriptLexer.html)上的文档
 
-* Andreas Tscharner's tutorial for adding [Syntax Highlighting & Code Folding](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_new_lexer/newlexertutorial.pdf), and [example code](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files_new_lexer/newlexertutorialcode.tar.bz2) in C++
+* Andreas Tscharner 的有关添加[语法加亮和代码折叠](./files/api_files_new_lexer/newlexertutorial.pdf)的教程，以及使用 C++ 的[示例代码](./files/api_files_new_lexer/newlexertutorialcode.tar.bz2)
 
