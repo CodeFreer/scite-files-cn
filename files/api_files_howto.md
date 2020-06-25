@@ -1,112 +1,112 @@
 
-[back](api_files.md)
+[返回](api_files.md)
 
 <a name="how_to_install_api"></a>
-### How to install an api file and enable calltips + completion
+### 如何安装一个 api 文件并启用调用提示+补全
 
-* As an example, let's set up the api file for the C standard library
+* 作为示范，让我们安装用于 C 标准库的 API 文件
 
-* Download [c.api](https://raw.githubusercontent.com/moltenform/scite-files/master/files/files/api_files/c.api)
+* 下载 [c.api](./files/api_files/c.api)
 
-* Move `c.api` into the directory that contains SciTE. In Linux this is typically `/usr/bin/scite` or `/usr/local/bin/scite`
+* 把 `c.api` 移到包含 SciTE 的目录中。 在 Linux 中，这通常是 `/usr/bin/scite` 或 `/usr/local/bin/scite`
 
-* Open SciTE
+* 打开 SciTE
 
-* From the Options menu, choose Open User Options File
+* 从 Options (选项)菜单中，选择 Open User Options File (打开用户选项文件)
 
-* Add the line `api.$(file.patterns.cpp)=$(SciteDefaultHome)/c.api`
+* 添加一行 `api.$(file.patterns.cpp)=$(SciteDefaultHome)/c.api`
 
-* Add the line `calltip.cpp.use.escapes=1`
+* 添加一行 `calltip.cpp.use.escapes=1`
 
-* Add the line `calltip.cpp.word.characters=$(chars.alpha)$(chars.numeric)_`
+* 添加一行 `calltip.cpp.word.characters=$(chars.alpha)$(chars.numeric)_`
 
-* Save this file and restart SciTE
+* 保存这个文件并重启 SciTE
 
-* In SciTE, start a new file and save it as "test.c"
+* 在 SciTE 中，开始一个新文件并把它另存为 "test.c"
 
-* Calltips
+* 调用提示
 
-    * Type the text "fprintf("
+    * 键入文本 "fprintf("
     
-    * As soon as you press (, a calltip appears, showing documentation for "fprintf"
+    * 当你按下 (，会出现一个调用提示，显示用于 "fprintf" 的文档
     
-    * You can show the calltip tooltip again by clicking to the right of the ( and pressing Ctrl+Shift+Space
+    * 你可以通过点击 ( 右侧并按 Ctrl+Shift+Space 可以再次显示调用提示工具提示
     
-* Completion
+* 补全
 
-    * On an empty line, type the text "fp" and press Ctrl+Space
+    * 在空行上，键入文本 "fp" 并按下 Ctrl+Space
     
-    * A listbox appears allowing you to choose between fprintf, fputc, and fputs
+    * 出现一个列表框让你在 fprintf, fputc 和 fputs 之间选择
     
-    * You can use the arrow keys can navigate this box and Enter to choose an item from this box
+    * 你可以使用箭头键导航这个框并按回车从这个框中选择一项
 
 
 <a name="how_to_install_properties"></a>
-### How to install a properties file
+### 如何安装一个 properties 文件
 
-* A .properties file can change colors and fonts, specify lists of keywords, define what action to take on "Compile" and "Go", map file extensions to a programming language, and more
+* 一个 .properties 文件可以更改颜色和字体，指定关键字的列表，定义在“编译”和“运行”时采取的动作，映射文件扩展名到一种编程语言，等等
 
-* To install a properties file, simply move the .properties file into the directory that contains SciTE. In Linux this is typically `/usr/bin/scite` or `/usr/local/bin/scite`
+* 要安装一个 properties 文件，只需移动 .properties 文件到包含 SciTE 的目录中。 在 Linux 中，这个通常是 `/usr/bin/scite` 或 `/usr/local/bin/scite`
 
-* If desired, you can then edit the properties file based on your configuration. For example, you have several different versions of Python installed. You can open SciTE, and from the Options menu choose `Open python.properties`. At the bottom of the file you can see the definitions for `command.go.*.py`. If, say, you wanted to press F5 to have SciTE run a python script in Python 3.7, you could change the line to say `command.go.*.py=C:\python37\pythonw -u "$(FileNameExt)"`
+* 如果需要，那么你可以基于你的配置编辑 properties 文件。例如，你已安装了多个不同版本的 Python。 你可以打开 SciTE，并从 Options (选项)菜单中选择 `Open python.properties`(打开..)。 在文件底部，你可以看到用于 `command.go.*.py` 的定义。如果，譬如说，你想按 F5 让 SciTE 运行一个使用 Python 3.7 的 Python 脚本，你可以更改该行为 `command.go.*.py=C:\python37\pythonw -u "$(FileNameExt)"`
 
-### More details
+### 更多细节
 
 ```
-There are two main ways you can tell SciTE which properties files to load.
+你有两种主要方式可以告知 SciTE 要加载哪些 properties 文件。
 
 1) 
-# (SciTE uses this by default)
-# in SciTEGlobal.properties,
-imports.exclude=(a list of properties files to skip)
-# Import all the language specific properties files in this directory
+# (SciTE 按默认使用这个)
+# 在 SciTEGlobal.properties 中，
+imports.exclude=(要跳过的 properties 文件的列表)
+# 导入这个目录中所有专用语言的 properties 文件
 import *
 
 2) 
-# an explicit list of what to import.
-# in SciTEGlobal.properties,
+# 要加载内容的一个显式列表。
+# 在 SciTEGlobal.properties 中，
 import myprop1
 import myprop2
-# etc.
-# the line import myprop1
-# looks for a file named myprop1.properties and loads it
-# with this approach, relative directories can be used
-# if this approach is used, to install a properties file you'll have to add a line
+# 等
+# import myprop1 导入行
+# 查找一个名为 myprop1.properties 的文件并使用这种方式加载它，
+# 可以使用相对目录
+# 如果使用这种方式，要安装一个 properties 文件，你将必须添加一行
 # import mypropfile
-# to begin using the file mypropfile.properties
+# 来开始使用文件 mypropfile.properties
 
-Here are some examples of how autocomplete and calltip can be configured,
+这里是如何配置自动补全和调用提示的一些示例，
 
-# if you hit ctrl-space and there is only one word that would match,
-# should we skip showing the menu and just insert that word?
+# 如果你按下 ctrl-space 并只有一个单词匹配的话，
+# 那么我们是否应该跳过显示菜单而只需插入该词呢?
 autocomplete.cpp.choose.single=0
 
-# is matching case sensitive?
+# 是否区分大小写匹配?
 autocomplete.cpp.ignorecase=0
 
-# enable calltips that contain more than one line of information, using \n. recommended.
+# 启用包含超过一行信息的调用提示，推荐使用 \n. 。
 calltip.cpp.use.escapes=1
 
-# automatically start autocompletion when this character is typed, see below
+# 当键入这个字符时自动开始自动补全，见下文
 autocomplete.cpp.start.characters=
 
-# which characters can be part of a word?
+# 哪些单词可以作为一个单词的一部分?
 calltip.cpp.word.characters=$(chars.alpha)$(chars.numeric)_
 
-# which character starts a list of parameters (e.g. what starts a function call)
+# 哪个字符开始一个参数列表(例如，开始一个函数调用的内容)
 calltip.cpp.parameters.start=(
 
-# which character separates a list of parameters (e.g. within a function call)
+# 哪个字符间隔一个列表的参数(例如，在一个函数调用中)
 calltip.cpp.parameters.separators=,
 
-# is matching case sensitive?
+# 是否匹配大小写?
 calltip.cpp.ignorecase=0
 
-# ending character
+# 终止字符
 calltip.cpp.parameters.end=)
 calltip.cpp.end.definition=)
 
-# for example, calltips for html and css could be,
+# 例如，用于 HTML 和 CSS 的调用提示可以是,
 autocomplete.hypertext.ignorecase=1
 calltip.hypertext.ignorecase=1
 calltip.hypertext.word.characters=_$(chars.alpha)$(chars.numeric)$:>
@@ -116,20 +116,19 @@ calltip.css.parameters.start=:
 calltip.css.parameters.end=
 calltip.css.parameters.separators=|
 
-A tip when writing a .api file:
-If the language has function calls from a namespace, such as "File.WriteAllText()",
-it might be better for the api file to have two entries for each function,
-one entry to autocomplete the method,
+编写 API 文件时的一个提示:
+如果该语言拥有来自一个命名空间的函数调用，譬如 "File.WriteAllText()"，
+那么让 API 文件对每个函数拥有两个条目可能更好，
+一个条目用于自动补全方法，
 File.WriteAllText
-and another entry for the calltip,
+而另一个条目用于调用提示，
 WriteAllText(string path, string contents)\n\tDescription: Creates a new file
 
-You can then set start.characters to ".",
+然后你可以设定 start.characters 为 "."，
 autocomplete.(current lexer).start.characters=.
-and then when you type "File.", the suggestions will automatically be shown
+然后，当你键入 "File." 时，将会自动显示该建议
 
-You can add more than one .api file at a time, e.g.
+你可以一次添加多个 API 文件，如
 api.$(file.patterns.cpp)=/path/to/first.api;/path/to/second.api
 
 ```
-
