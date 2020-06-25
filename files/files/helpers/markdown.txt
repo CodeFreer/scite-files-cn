@@ -1,35 +1,34 @@
-# Markdown and SciTE
+# Markdown 和 SciTE
 
-_How to get a live preview (on Firefox) of a markdown file._
+_如何获取一个 markdown 文件的即时预览(在 Firefox 上)。_
 
-Environment:
+环境:
 
-* Windows 7 SP1 64 bit
+* Windows 7 SP1 64 位
 * Python 2.6.6
 * SciTE 3.2.5
 
-Prerequisites:
+必备条件:
 
 * [python markdown](http://pythonhosted.org/Markdown/)
 
-Optional packages:
+可选包:
 
-* [smarty pants](https://pypi.python.org/pypi/mdx_smartypants/1.3), to emit 
-  typographically nicer ("curly") quotes, proper ("em" and "en") dashes, etc.;
+* [smarty pants](https://pypi.python.org/pypi/mdx_smartypants/1.3), 用于发出
+  排版较好的("弯曲")引号，适当的 ("em" 和 "en") 短线等;
 
-* [del/ins](https://pypi.python.org/pypi/mdx_del_ins/1.0), to support the `del` 
-  and `ins` tags;
+* [del/ins](https://pypi.python.org/pypi/mdx_del_ins/1.0)，用于支持 `del` 
+  和 `ins` 标记;
 
- * [xhtml_wrap](https://bitbucket.org/thinkstorm/xhtml_wrap/src), to wrap the
-   output in XHTML, optionally adding a title and a CSS URL.
+ * [xhtml_wrap](https://bitbucket.org/thinkstorm/xhtml_wrap/src)，用于使用 XHTML
+   封装输出，可选择添加一个标题和 CSS URL。
 
-## SciTE setup
+## SciTE 安装
 
-* pick up a temporary folder to host the markdown previews, e.g. 
-`%UserProfile%\.md` --- put the `markdown.css` file of your choice here;
+* 选取一个临时文件夹用于托管 markdown 预览，例如
+`%UserProfile%\.md` --- 把你选择的 `markdown.css` 文件放到这里;
 
-* define the following variables *before* the inclusion of the lua scripts in 
-  your `SciTEUser.properties` file:
+* 在你的 `SciTEUser.properties` 文件中的 lua 脚本的包含 *之前* 定义下列变量:
 
         python.home=C:\Python26
         python=$(python.home)\python.exe
@@ -38,14 +37,14 @@ Optional packages:
         markdown.rendering.dir=$(SciteUserHome)\.md
         markdown.rendering.file=$(markdown.rendering.dir)\$(FileName).html
 
-* to open the markdown preview on the default browser, add these lines:
+* 要在默认浏览器上打开 markdown 预览，添加这些行:
 
         command.build.subsystem.$(file.patterns.markdown)=2
         command.build.$(file.patterns.markdown)="$(markdown.rendering.file)"
 
-* to render it automatically at save time:
+* 要在保存时自动渲染它:
 
-    * add the following lines to your `SciTEUser.properties` file:
+    * 添加下列行到你的 `SciTEUser.properties` 文件:
 
             file.patterns.markdown=*.md;*.markdown
             filter.markdown=Markdown (md markdown)|$(file.patterns.markdown)|
@@ -54,8 +53,8 @@ Optional packages:
             command.21.$(file.patterns.markdown)=$(python.scripts.dir)\markdown_py.bat -x extra -x del_ins -x meta -x sane_lists -x smartypants -x toc -x wikilinks -x xhtml_wrap(title="",css_url="markdown.css",js_url="") -f "$(markdown.rendering.file)" "$(FilePath)"
             user.shortcuts=Ctrl+3|1121|
 
-    * create a `markdown.lua` file in the same folder where your
-      `SciTEStartup.lua` file lives, and copy the following lua fragment:
+    * 在你的 `SciTEStartup.lua` 文件所在的同一文件夹中创建一个 `markdown.lua` 文件，
+      并复制下列 lua 片段:
 
             function Render()
               if editor.LexerLanguage == "markdown" then
@@ -68,35 +67,32 @@ Optional packages:
               return false
             end
 
-    * add the following line to your `SciTEStartup.lua` file:
+    * 添加下列行到你的 `SciTEStartup.lua` 文件:
 
             require "markdown"
 
 
-## Workflow
+## 工作流程
 
-* Open an exisiting markdown file or begin with an empty, _UTF-8 with BOM_ 
-  encoded file and write some markup text;
+* 打开一个现有的 markdown 文件或使用一个空白的 _带 BOM 的 UTF-8_ 编码的文件开始，
+  并写入某些标记文本;
 
-* to start the preview, press F7: your default browser should open the temporary 
-  html preview file;
+* 要开始预览，按 F7: 你的默认浏览器应该会打开临时的 HTML 预览文件;
 
-* to refresh the preview, either:
+* 要刷新预览，可以:
 
-* save the markdown file in SciTE, then refresh the preview in the browser;
+* 在 SciTE 中保存 markdown 文件，然后在浏览器中刷新预览;
 
-* install an extension to let Firefox reload the modified file automatically
-  --- I currently use the [Auto 
-  Reload](https://addons.mozilla.org/en-US/firefox/addon/auto-reload) extension, 
-  which monitors my `$(SciteUserHome)\.md` folder and reloads any file as it 
-  changes.
+* 安装一个扩展让 Firefox 自动重载修改的文件
+  --- 我当前使用 [Auto Reload](https://addons.mozilla.org/en-US/firefox/addon/auto-reload) 扩展， 
+  它会监视我的 `$(SciteUserHome)\.md` 文件夹并在任何文件更改时重载之。
 
 
-## Notes
+## 备注
 
-1) being a lua newby, the `pcall(Render)` call catches the _Editor pane is not
-   accessible at this time_ error that occours at SciTE startup;
+1) 作为 lua 新手， `pcall(Render)` 调用捕捉在 SciTE 启动时发生的 _Editor pane is not
+   accessible at this time_ (编辑器窗格此时不可访问)错误;
 
-2) could not find a better method than 
-   `scite.MenuCommand(tonumber(props["markdown.rendering.command"]))` to fire
-   the markdown rendering procedure.
+2) 无法找到比
+   `scite.MenuCommand(tonumber(props["markdown.rendering.command"]))` 更好的办法
+   来触发 markdown 渲染过程。
