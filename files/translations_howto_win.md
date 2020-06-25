@@ -1,23 +1,21 @@
 
 <a name="how_to_install_translation_win"></a>
-### How to install a translation (Windows)
+### 如何安装一个翻译 (Windows)
 
-* View the list of translations [here](translations_list.md).
+* 在[这里](translations_list.md)访问翻译的列表。
 
-* Right-click one of the links and choose "Save link as..." or "Save target as..."
+* 右击链接之一并选择"保存链接为..." 或 "保存目标为..."
 
-    * <a href="#">![Screenshot right-click link](https://raw.githubusercontent.com/moltenform/scite-files/master/files/translations_install_win_right.png)</a>
+    - <a href="#">![截屏右击链接](https://raw.githubusercontent.com/moltenform/scite-files/master/files/translations_install_win_right.png)</a>
 
-* Go to the folder where SciTE's ".properties" files are. If you installed SciTE from a .zip file, this is the folder where `SciTE.exe` is. If you installed SciTE from an installer, this is the folder where `SciTEGlobal.properties` is, for example `C:\ProgramData\SciTE`.
+* 转到 SciTE 的 ".properties" 文件所在的文件夹。如果你是从一个 Zip 文件中安装 SciTE 的话，这个就是 `SciTE.exe` 所在的文件夹。 如果你是从一个安装程序安装 SciTE 的话，那么这个就是 `SciTEGlobal.properties` 所在的文件夹，例如 `C:\ProgramData\SciTE`。
 
-    * <a href="#">![Screenshot navigate to SciTE directory](https://raw.githubusercontent.com/moltenform/scite-files/master/files/translations_install_win_path.png)</a>
+    - <a href="#">![导航到 SciTE 目录的截屏](https://raw.githubusercontent.com/moltenform/scite-files/master/files/translations_install_win_path.png)</a>
 
-* Type in the filename "locale.properties" and click Save
+* 键入文件名 "locale.properties" 并点击保存
 
-    * <a href="#">![Screenshot rename file](https://raw.githubusercontent.com/moltenform/scite-files/master/files/translations_install_win_rename.png)</a>
+    - <a href="#">![重命名文件截屏](https://raw.githubusercontent.com/moltenform/scite-files/master/files/translations_install_win_rename.png)</a>
 
-* Re-open SciTE.exe, and the menus and dialogs will show translated text
+* 重新打开 SciTE.exe，而菜单和对话框将会显示翻译的文本
 
-[back](translations.md)
-
-
+[返回](translations.md)
