@@ -1,7 +1,7 @@
 
-How to use Perl scripts from SciTE. These scripts can reformat code/clean up whitespace. (Copied from Serge Baranov's SciTE package).
+如何在 SciTE 中使用 Perl 脚本。 这些脚本可以重新格式化代码/清理空白。 (复制自 Serge Baranov 的 SciTE 包)。
 
-First, create the following files in a folder "tools" inside the SciTE directory.
+首先，在 SciTE 目录中的 "tools" 文件夹中创建下列文件。
 
 formatall.pl
 --------------------
@@ -53,7 +53,7 @@ foreach(@buff) {
 close(OUT);
 exit;
 
-Then, to install these scripts, put the following information in SciTEGlobal.properties or SciTEUser.properties:
+然后，安装这些脚本，把下列信息放入 SciTEGlobal.properties 或 SciTEUser.properties 中:
 
 command.name.20.*=Reformat
 command.20.*=perl $(SciteDefaultHome)\tools\formatall.pl $(SciteDefaultHome)\tools $(FilePath)
@@ -75,5 +75,5 @@ command.is.filter.8.*=1
 command.save.before.8.*=1
 
 
-Now, assuming Perl is installed, you should be able to run these scripts.
-(And, you can use the keyboard shortcuts Ctrl+Alt+L, Ctrl+9, and Ctrl+8).
+现在，假设 Perl 已安装，你应该可以运行这些脚本了。
+(而且，你可以使用快捷键 Ctrl+Alt+L, Ctrl+9 和 Ctrl+8)。
