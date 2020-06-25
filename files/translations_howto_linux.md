@@ -1,25 +1,25 @@
 
 <a name="how_to_install_translation_linux"></a>
-### How to install a translation (Linux)
+### 如何安装一个翻译 (Linux)
 
-* View the list of translations [here](translations_list.md).
+* 在[这里](translations_list.md)访问翻译的列表。
 
-* Right-click one of the links and choose "Save link as..." or "Save target as..."
+* 右击链接之一并选择"保存链接为..." 或 "保存目标为..."
 
-    * <a href="#">![Screenshot right-click link](https://raw.githubusercontent.com/moltenform/scite-files/master/files/translations_install_linux_right.png)</a>
+   <a href="#">![右击链接截屏](./translations_install_linux_right.png)</a>
 
-* Save to a writable directory, such as ~/Downloads.
+* 保存到一个可写的目录，譬如 ~/Downloads.
 
-    * <a href="#">![Screenshot save to downloads](https://raw.githubusercontent.com/moltenform/scite-files/master/files/translations_install_linux_path.png)</a>
+   <a href="#">![保存到下载截屏](https://raw.githubusercontent.com/CodeFreer/scite-files-cn/master/files/translations_install_linux_path.png)</a>
 
-* Open a terminal, and using sudo, move the file to `/usr/share/scite/locale.properties`
+* 打开中断，使用 sudo ，把文件移到 `/usr/share/scite/locale.properties`
 
-    * <a href="#">![Screenshot save to downloads](https://raw.githubusercontent.com/moltenform/scite-files/master/files/translations_install_linux_terminal.png)</a>
+   <a href="#">![保存到下载截屏](https://raw.githubusercontent.com/CodeFreer/scite-files-cn/master/files/translations_install_linux_terminal.png)</a>
 
-* (Note that the destination filename is locale.properties). If `/usr/share/scite` does not exist, try `/usr/local/share/scite`. 
+* (注意，目标文件名是 locale.properties)。如果 `/usr/share/scite` 不存在，尝试 `/usr/local/share/scite`。
 
-* Re-open SciTE, and the menus and dialogs will show translated text
+* 重新打开 SciTE.exe，而菜单和对话框将会显示翻译的文本
 
-* (In summary, the name of the file must be locale.properties and should be placed in the same directory as SciTEGlobal.properties)
+* (总之，文件的名称必须是 locale.properties 并且应该放置在和 SciTEGlobal.properties 同一目录中)
 
-[back](translations.md)
+[返回](translations.md)
