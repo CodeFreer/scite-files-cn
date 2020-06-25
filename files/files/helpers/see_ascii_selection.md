@@ -20,7 +20,7 @@ Ctrl+PageUp|IDM_PREVFILE|\
 Ctrl+PageDown|IDM_NEXTFILE|
 ```
 
-在 SciTE 目录中创建一个称为 `see_ascii_selection.lua` 的文件，带上下列内容，
+在 SciTE 目录中创建一个称为 `see_ascii_selection.lua` 的文件，带上下列的内容，
 
 ```
 function PrintSelectionInfo()
