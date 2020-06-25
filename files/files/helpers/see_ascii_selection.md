@@ -1,7 +1,7 @@
 
-[back](../../helpers.md)
+[返回](../../helpers.md)
 
-Open `SciTEGlobal.properties`, and add the following lines,
+打开 `SciTEGlobal.properties`，并添加下列行，
 
 ```
 ext.lua.startup.script=$(SciteDefaultHome)/see_ascii_selection.lua
@@ -20,7 +20,7 @@ Ctrl+PageUp|IDM_PREVFILE|\
 Ctrl+PageDown|IDM_NEXTFILE|
 ```
 
-Create a file called `see_ascii_selection.lua` in the SciTE directory with the contents,
+在 SciTE 目录中创建一个称为 `see_ascii_selection.lua` 的文件，带上下列内容，
 
 ```
 function PrintSelectionInfo()
@@ -30,6 +30,6 @@ function PrintSelectionInfo()
 end
 ```
 
-Now you can press F1 to see ASCII codes of symbols under selection while editing any file in SciTE.
+现在，你可以在 SciTE 中编辑任何文件的时候按 F1 来查看选择内容下的符号的 ASCII 代码。
 
-Based on a script by Egor Skriptunoff written [here](https://stackoverflow.com/questions/21603285/scite-lua-scripting-extension-api-beginner).
+基于 Egor Skriptunoff [在这里](https://stackoverflow.com/questions/21603285/scite-lua-scripting-extension-api-beginner)编写的一个脚本。
