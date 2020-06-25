@@ -15,7 +15,7 @@
 
 * 右击链接之一并选择"保存链接为..."或"保存目标为..."
 
-    * <a href="#">![右击链接截图](./translations_install_linux_right.png)</a>
+   <a href="#">![右击链接截图](./translations_install_linux_right.png)</a>
     
 * 打开该文件。如果你在 SciTE 中打开该文件，那么你可能需要通过从“文件”菜单转到“编码”，然后选择 UTF-8 来确认文件是以 UTF-8 编码查看
 
